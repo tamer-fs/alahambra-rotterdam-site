@@ -24,7 +24,7 @@ strong {
 
 .top-line {
     position: absolute;
-    top: -340px;
+    top: -220px;
     background-color: #d7c5b1;
     justify-items: center;
     position: relative;
@@ -72,8 +72,9 @@ strong {
   
   /* The container <div> - needed to position the dropdown content */
   .dropdown {
-    position: relative;
+    position: absolute;
     display: inline-block;
+    top: 120px;
 }
   
   /* Dropdown Content (Hidden by Default) */
@@ -82,13 +83,16 @@ strong {
     min-height: 700px;
     position: absolute;
     background-color: #f1f1f1;
-    min-width: 100vw;
+    min-width: 50vw;
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
     z-index: 1;
-    top: -1600px;
-    right: -132px;
-    transition: .5s ease;
+    top: -1700px;
+    right: -0px;
     text-align: center;
+    transition: .5s ease;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center
 }
   
   /* Links inside the dropdown */
@@ -103,14 +107,13 @@ strong {
 
 .dropdown-content .image{
     margin-top: 100px;
-    
 }
   
   /* Change color of dropdown links on hover */
 .dropdown-content p:hover {background-color: #ddd;}
   
   /* Show the dropdown menu (use JS to add this class to the .dropdown-content container when the user clicks on the dropdown button) */
-.show {display:block; top: -430px; transition: .5s ease;}
+.show {display:block; top: -640px; transition: .5s ease;}
 
 .huge-txt {
     position: absolute;
@@ -129,17 +132,14 @@ strong {
 }
 .wrapper > div {
     width: 100vw;
-    height: 600px;
+    height: 900px;
     position: absolute;
+    top: -100px;
     animation: animate 25s infinite;
     opacity: 0;
     -webkit-background-size: cover;
     background-size: cover;
     background-position: center center;
-}
-
-.wrapper:hover {
-    box-shadow: rgba(0, 0, 0, 0.35) 0px -50px 36px -28px inset;
 }
 
 .wrapper > div:nth-child(2) {
@@ -154,6 +154,7 @@ strong {
 .wrapper > div:nth-child(5) {
     animation-delay: 20s;
 }
+
 @keyframes animate{
     10%{
         opacity: 1;
@@ -168,6 +169,88 @@ strong {
         transform: scale(1.2);
     }
 }
+
+.main-img-wrap {
+    position: absolute;
+    top: 0px;
+    width: 800px;
+    height: auto;
+}
+
+.social-media-tags {
+    position: absolute;
+    top: 500px;
+    left: 100px;
+    font-family: calibreRegular;
+}
+
+.social-media-tags > a {
+    color: black;
+    font-size: 1.2rem;
+    text-decoration: none;
+    border: 1px solid black;
+    padding: 10px 10px 7px 10px;
+    margin-top: 100px;
+}
+
+.social-media-b {
+    padding-right: 9px;
+}
+
+.container {
+    width: 400px;
+    height: 400px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .center {
+    width: 180px;
+    height: 60px;
+    position: absolute;
+  }
+  
+  .btn {
+    width: 180px;
+    height: 60px;
+    cursor: pointer;
+    background: transparent;
+    border: 2px solid #ffffff;
+    outline: none;
+    transition: 1s ease-in-out;
+  }
+  
+  svg {
+    position: absolute;
+    left: 0;
+    top: 0;
+    fill: none;
+    stroke: rgb(49, 49, 49);
+    stroke-dasharray: 150 480;
+    stroke-dashoffset: 150;
+    transition: 1s ease-in-out;
+  }
+  
+  .btn:hover {
+    transition: 1s ease-in-out;
+    background: #444444;
+  }
+  
+  .btn:hover svg {
+    stroke-dashoffset: -480;
+  }
+  
+  .btn span {
+    color: rgb(255, 255, 255);
+    font-size: 18px;
+    font-weight: Bold;
+    font-family: calibreBold;
+  }
 
 @media (max-width: 1097px) {
     .top-line .txt {
@@ -201,12 +284,6 @@ strong {
     }
 }
 
-@media (max-height: 768px) {
-    .wrapper > div {
-        height: 500px;
-    }
-}
-
 @media (max-width: 392px) {
     .dropbtn {
         right: -80px;
@@ -215,4 +292,69 @@ strong {
         width: 200px;
         height: auto;
     }
+}
+
+@media (max-height: 810px) {
+    .wrapper > div {
+        height: 600px;
+    }
+    .top-line {
+        top: px;
+    }
+}
+
+@media (max-height: 755px) {
+    .social-media-tags {
+        top: 350px;
+    }
+}
+
+@media (max-width: 906px) {
+    .main-img-wrap {
+        width: 500px;
+    }
+}
+
+@media (max-width: 850px) {
+    .social-media-tags {
+        top: 50px;
+        left: 500px;
+    }
+
+    .social-media-tags > a {
+        border: 1px solid white;
+        color: white;
+    }
+}
+
+@media (max-width: 710px) {
+    .social-media-tags {
+        display: none;
+    }
+}
+
+@media (max-width: 506px) {
+    .main-img-wrap {
+        width: 400px;
+        top: 10px;
+    }
+}
+
+@media (max-width: 402px) {
+    .main-img-wrap {
+        width: 300px;
+        top: 10px;
+    }
+
+    .container {
+        width: 200px;
+        height: 200px;
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
 }
