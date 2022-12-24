@@ -1,0 +1,218 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+@font-face {
+    font-family: calibreRegular;
+    src: url("font/CalibreRegular.otf");
+}
+
+@font-face {
+    font-family: calibreThin;
+    src: url("font/calibreThin.otf");
+}
+
+@font-face {
+    font-family: calibreBold;
+    src: url("font/CalbireBold.otf");
+}
+
+strong {
+    font-family: calibreRegular;
+}
+
+.top-line {
+    position: absolute;
+    top: -340px;
+    background-color: #d7c5b1;
+    justify-items: center;
+    position: relative;
+    padding-bottom: 130px;
+}
+
+.top-line .img {
+    display: inline-block;
+    height: 125px;
+    width: auto;
+}
+
+.top-line a {
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+    font-family: calibreThin;
+    font-size: 1.4rem;
+    margin-left: 100px;
+}
+
+.top-line .txt {
+    position: absolute;
+    top: 55px;
+    left: 500px;
+}
+
+/* Dropdown Button */
+.dropbtn {
+    position: absolute;
+    top: -80px;
+    right: -100px;
+    background-color: #d7c5b1;
+    color: white;
+    padding: 0px 6px 0px 6px;
+    border: 1px solid black;
+    font-size: 16px;
+    cursor: pointer;
+    display: none;
+}
+  
+  /* Dropdown button on hover & focus */
+  .dropbtn:hover, .dropbtn:focus {
+    background-color: #beaf9d;
+}
+  
+  /* The container <div> - needed to position the dropdown content */
+  .dropdown {
+    position: relative;
+    display: inline-block;
+}
+  
+  /* Dropdown Content (Hidden by Default) */
+  .dropdown-content {
+    display: block;
+    min-height: 700px;
+    position: absolute;
+    background-color: #f1f1f1;
+    min-width: 100vw;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    top: -1600px;
+    right: -132px;
+    transition: .5s ease;
+    text-align: center;
+}
+  
+  /* Links inside the dropdown */
+  .dropdown-content p {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    font-family: calibreThin;
+    font-size: 1.3rem;
+}
+
+.dropdown-content .image{
+    margin-top: 100px;
+    
+}
+  
+  /* Change color of dropdown links on hover */
+.dropdown-content p:hover {background-color: #ddd;}
+  
+  /* Show the dropdown menu (use JS to add this class to the .dropdown-content container when the user clicks on the dropdown button) */
+.show {display:block; top: -430px; transition: .5s ease;}
+
+.huge-txt {
+    position: absolute;
+    top: 300px;
+    right: 45vw;
+    color: #000000;
+    font-family: 'Great Vibes',Arial, Helvetica, sans-serif;
+    font-size: 5.5rem;
+}
+
+.wrapper {
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+    position: relative;
+}
+.wrapper > div {
+    width: 100vw;
+    height: 600px;
+    position: absolute;
+    animation: animate 25s infinite;
+    opacity: 0;
+    -webkit-background-size: cover;
+    background-size: cover;
+    background-position: center center;
+}
+
+.wrapper:hover {
+    box-shadow: rgba(0, 0, 0, 0.35) 0px -50px 36px -28px inset;
+}
+
+.wrapper > div:nth-child(2) {
+    animation-delay: 5s;
+}
+.wrapper > div:nth-child(3) {
+    animation-delay: 10s;
+}
+.wrapper > div:nth-child(4) {
+    animation-delay: 15s;
+}
+.wrapper > div:nth-child(5) {
+    animation-delay: 20s;
+}
+@keyframes animate{
+    10%{
+        opacity: 1;
+    }
+    20%{
+        opacity: 1;
+    }
+    30%{
+        opacity: 0;
+    }
+    40%{
+        transform: scale(1.2);
+    }
+}
+
+@media (max-width: 1097px) {
+    .top-line .txt {
+        left: 300px;
+    }
+}
+
+@media (max-width: 899px) {
+    .top-line a {
+        margin-left: 60px;
+    }
+} 
+
+@media (max-width: 777px) {
+    .top-line .txt {
+        display: none;
+    }
+
+    .dropbtn {
+        display: inline-block;
+    }
+}
+ 
+@media (max-width: 434px) {
+    .top-line .img {
+        height: 100px;
+    }
+
+    .dropbtn {
+        top: -70px;
+    }
+}
+
+@media (max-height: 768px) {
+    .wrapper > div {
+        height: 500px;
+    }
+}
+
+@media (max-width: 392px) {
+    .dropbtn {
+        right: -80px;
+    }
+    .top-line .img {
+        width: 200px;
+        height: auto;
+    }
+}
