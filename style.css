@@ -10,7 +10,7 @@
 
 @font-face {
     font-family: calibreThin;
-    src: url("font/calibreThin.otf");
+    src: url("font/CalibreThin.otf");
 }
 
 @font-face {
@@ -24,7 +24,7 @@ strong {
 
 .top-line {
     position: absolute;
-    top: -220px;
+    top: -270px;
     background-color: #d7c5b1;
     justify-items: center;
     position: relative;
@@ -54,8 +54,8 @@ strong {
 /* Dropdown Button */
 .dropbtn {
     position: absolute;
-    top: -80px;
-    right: -100px;
+    top: 38px;
+    right: -600px;
     background-color: #d7c5b1;
     color: white;
     padding: 0px 6px 0px 6px;
@@ -74,25 +74,27 @@ strong {
   .dropdown {
     position: absolute;
     display: inline-block;
-    top: 120px;
+    top: 0px;
+    left: 0px;
 }
   
   /* Dropdown Content (Hidden by Default) */
   .dropdown-content {
     display: block;
-    min-height: 700px;
     position: absolute;
+    min-height: 700px;
     background-color: #f1f1f1;
     min-width: 50vw;
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
     z-index: 1;
-    top: -1700px;
-    right: -0px;
+    width: 100vw;
+    height: 800px;
+    margin: 0px;
     text-align: center;
     transition: .5s ease;
     margin-left: auto;
     margin-right: auto;
-    text-align: center
+    top: -200vh;
 }
   
   /* Links inside the dropdown */
@@ -113,7 +115,7 @@ strong {
 .dropdown-content p:hover {background-color: #ddd;}
   
   /* Show the dropdown menu (use JS to add this class to the .dropdown-content container when the user clicks on the dropdown button) */
-.show {display:block; top: -640px; transition: .5s ease;}
+.show {display:block; top: -400px; transition: .5s ease;}
 
 .huge-txt {
     position: absolute;
@@ -130,11 +132,11 @@ strong {
     overflow: hidden;
     position: relative;
 }
-.wrapper > div {
+.wrapper > .img {
     width: 100vw;
     height: 89vh;
     position: absolute;
-    top: -100px;
+    top: -150px;
     animation: animate 25s infinite;
     opacity: 0;
     -webkit-background-size: cover;
@@ -142,16 +144,16 @@ strong {
     background-position: center center;
 }
 
-.wrapper > div:nth-child(2) {
+.wrapper > .img:nth-child(2) {
     animation-delay: 5s;
 }
-.wrapper > div:nth-child(3) {
+.wrapper > .img:nth-child(3) {
     animation-delay: 10s;
 }
-.wrapper > div:nth-child(4) {
+.wrapper > .img:nth-child(4) {
     animation-delay: 15s;
 }
-.wrapper > div:nth-child(5) {
+.wrapper > .img:nth-child(5) {
     animation-delay: 20s;
 }
 
@@ -355,3 +357,25 @@ strong {
       }
 }
 
+@media (max-width: 645px) {
+    .dropbtn {
+        right: -500px;
+    }
+}
+
+@media (max-width: 521px) {
+    .dropbtn {
+        right: -400px;
+    }
+}
+
+@media (max-width: 439px) {
+    .top-line .img {
+        height: 100px;
+    }
+
+    .dropbtn {
+        right: -300px;
+        top: 25px;
+    }
+}
