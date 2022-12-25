@@ -17,3 +17,11 @@ function myFunction() {
       }
     }
   }
+
+function toInstagram() {
+  window.location.href = "https://www.instagram.com/alhambrarestaurant_/";
+}
+
+function toFacebook() {
+  window.location.href = "https://www.facebook.com/profile.php?id=100083371561019";
+}

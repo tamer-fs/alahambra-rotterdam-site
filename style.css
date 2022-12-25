@@ -412,3 +412,25 @@ strong {
         top: -220px;
     }
 }
+
+@media (max-width: 306px) {
+    .top-line .img {
+        width: 180px;
+        height: auto;
+    }
+
+    .dropbtn {
+        width: 35px;
+        right: -240px;
+    }
+
+    .main-img-wrap {
+        width: 250px;
+        height: auto;
+    }
+
+    .btn {
+        width: 100px;
+        margin-left: 40px;
+    }
+}
