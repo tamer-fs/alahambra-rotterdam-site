@@ -18,10 +18,13 @@ function myFunction() {
     }
   }
 
-function toInstagram() {
-  window.location.href = "https://www.instagram.com/alhambrarestaurant_/";
-}
+const facebookBtn = document.getElementById('facebook');
+const instagramBtn = document.getElementById('instagram');
 
-function toFacebook() {
+facebookBtn.addEventListener('click', function () {
   window.location.href = "https://www.facebook.com/profile.php?id=100083371561019";
-}
+})
+
+instagramBtn.addEventListener('click', function () {
+  window.location.href = "https://www.instagram.com/alhambrarestaurant_/";
+})
