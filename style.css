@@ -252,6 +252,11 @@ strong {
     font-family: calibreBold;
   }
 
+.attribution {
+    background-color: #4b4b4b;
+    padding: 20px;
+}
+
 @media (max-width: 1097px) {
     .top-line .txt {
         left: 300px;
@@ -280,7 +285,7 @@ strong {
     }
 
     .dropbtn {
-        top: -70px;
+        top: -90px;
     }
 }
 
@@ -357,4 +362,16 @@ strong {
         justify-content: center;
         align-items: center;
       }
+}
+
+@media (max-height: 792px) {
+    .top-line {
+        top: -270px;
+    }
+}
+
+@media (max-height: 617px) {
+    .top-line {
+        top: -240px;
+    }
 }
