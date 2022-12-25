@@ -197,10 +197,10 @@ strong {
 }
 
 .social-media-tags > a {
-    color: black;
+    color: rgb(255, 255, 255);
     font-size: 1.2rem;
     text-decoration: none;
-    border: 1px solid black;
+    border: 1px solid rgb(255, 255, 255);
     padding: 10px 10px 7px 10px;
     margin-top: 100px;
 }
@@ -264,7 +264,7 @@ strong {
     font-family: calibreBold;
   }
 
-.attribution {
+#attribution {
     background-color: #d7c5b1;
     padding: 20px;
     text-align: center;
