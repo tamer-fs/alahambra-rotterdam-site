@@ -3,8 +3,13 @@
     padding: 0px;
 }
 
-html {
-    scroll-behavior: smooth;
+body {
+    --grey-100: #e4e9f0;
+    --grey-200: #cfd7e3;
+    --grey-300: #b5c0cd;
+    --grey-800: #3e4e63;
+    --grid-gap: 1px;
+    --day-label-size: 20px;
 }
 
 @font-face {
@@ -14,7 +19,7 @@ html {
 
 @font-face {
     font-family: calibreThin;
-    src: url("font/CalibreThin.otf");
+    src: url("font/calibreThin.otf");
 }
 
 @font-face {
@@ -26,38 +31,76 @@ strong {
     font-family: calibreRegular;
 }
 
-.top-line {
+.title-txt {
+    border-radius: 5px;
+    background-color: #0000007c;
+    padding-top: 10px;
+    color: #c2a46d;
     position: absolute;
-    top: -270px;
-    background-color: #d7c5b1;
-    justify-items: center;
-    position: relative;
-    padding-bottom: 170px;
-}
-
-.top-line .img {
-    display: inline-block;
-    height: 125px;
-    width: auto;
-}
-
-.top-line a {
-    text-decoration: none;
-    color: rgb(0, 0, 0);
+    width: 70vw;
+    text-align: center;
     font-family: calibreThin;
-    font-size: 1.4rem;
-    margin-left: 100px;
-    border-bottom: 1px solid black;
+    font-weight: bolder;
+    font-size: 1.8rem;
+    border-bottom: 2px solid black;
+    top: 100px;
+    left: 0;
+    right: 0;
+    margin: auto;
+    margin-top: 100px;
 }
 
-.top-line a:hover {
-    border-bottom: 2px solid rgb(66, 66, 66);
+.cropped {
+    width: 100vw; 
+    height: 300px; 
+    overflow: hidden;
+    border-bottom: 4px solid #c2a46d;
+}
+    
+.cropped img {
+    margin: -600px 0px 0px -150px;
 }
 
-.top-line .txt {
+.amount-widget {
+    text-align: center;
     position: absolute;
-    top: 55px;
-    left: 500px;
+    background-color: white;
+    border: 1px solid rgb(94, 94, 94);
+    display: inline-block;
+    padding: 10px;
+    border-radius: 10px;
+    right: 0;
+    left: 0;
+    width: 355px;
+    height: 60px;
+    top: 480px;
+    margin: auto;
+    box-shadow: rgba(0, 0, 0, 0.07) 0px 1px 2px, rgba(0, 0, 0, 0.07) 0px 2px 4px, rgba(0, 0, 0, 0.07) 0px 4px 8px, rgba(0, 0, 0, 0.07) 0px 8px 16px, rgba(0, 0, 0, 0.07) 0px 16px 32px, rgba(0, 0, 0, 0.07) 0px 32px 64px;
+}
+
+.amount-widget:hover {
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 25px 50px -12px;
+}
+
+.amount-widget .amount .button-row button {
+    font-family: calibreRegular;
+    font-weight: bolder;
+    background-color: white;
+    border: 0px solid;
+    padding: 10px 30px 7px 30px;
+    border-radius: 5px;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 6px -1px, rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
+}
+
+.amount-widget .amount .button-row button:focus {
+    background-color: rgb(61, 61, 61);
+    color: white;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 6px -1px, rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
+}
+
+.amount-widget > span {
+    font-family: calibreThin;
+    font-size: 1.1rem;
 }
 
 .top-line-other {
@@ -157,7 +200,7 @@ strong {
 .dropdown-content .a:hover {background-color: #ddd;}
   
   /* Show the dropdown menu (use JS to add this class to the .dropdown-content container when the user clicks on the dropdown button) */
-.show {display:block; top: -75vh; transition: .5s ease;}
+.show {display:block; top: 0vh; transition: .5s ease;}
 
 .huge-txt {
     position: absolute;
@@ -558,5 +601,53 @@ strong {
     .top-line-other a {
         font-size: 1rem;
         margin-left: 20px;
+    }
+}
+
+@media (max-width: 860px) {
+    .title-txt {
+        font-size: 1.4rem;
+    }
+}
+
+@media (max-width: 664px) {
+    .title-txt {
+        font-size: 1rem;
+    }
+}
+
+@media (max-width: 480px) {
+
+    @keyframes animate {
+        0% {
+            width: 50vw;
+        }
+        4% {
+            width: 80vw;
+        }
+    }
+}
+
+@media (max-width: 485px) {
+    .title-txt {
+        font-size: 0.8rem;
+    }
+}
+
+@media (max-width: 444px) {
+    .amount-widget .amount .button-row button{
+        padding: 10px 18px 5px 18px;
+    }
+    .amount-widget {
+        width: 250px;
+    }
+}
+
+@media (max-width: 314px) {
+    .amount-widget .amount .button-row button{
+        padding: 10px 15px 5px 15px;
+    }
+    .amount-widget {
+        width: 210px;
     }
 }
