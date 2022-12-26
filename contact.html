@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -7,6 +8,7 @@
     <title>Document</title>
     <link rel="stylesheet" href="reservation.css">
     <script src="reservation.js"></script>
+    <script src="index.js"></script>
 </head>
 <body>
     <div class="top-line-other">
@@ -33,23 +35,30 @@
         </div>
     </div>
 
-    <div class="cropped">
-        <img src="https://scontent-ams4-1.xx.fbcdn.net/v/t39.30808-6/299603860_155021573856322_7923798831902282585_n.jpg?_nc_cat=109&ccb=1-7&_nc_sid=8bfeb9&_nc_ohc=SKKguXh2jwUAX8hHh_X&_nc_ht=scontent-ams4-1.xx&oh=00_AfAy6YJzJluGdX9WWdbvvlYg8HHD7GNjwAPRefV-uP404g&oe=63AC7DBB" alt="">
-    </div>
+    <div style="width: 100vw; text-align: center;">
+        <div class="contact-widgets">
+            <div class="widget" onclick='goTo("tel:0102307808")'>
+                <img src="images/phone-icon.png" alt="phone-icon" style="padding-top: 2px;"> <br> <br>
+                <span>010 23 07 808</span>
+                <p>Voor het snelste antwoord en reservering</p>
+            </div>
 
-    <div class="title-txt">
-        <h1>Tafel reserveren</h1>
-    </div>
+            <div class="widget" onclick='goTo("https://www.instagram.com/alhambrarestaurant_/")'>
+                <img class="img" src="images/instagram.png" alt="instagram-icon"> <br> <br>
+                <span>alhambrarestaurant_</span>
+                <p>Om updates te bekijken en een gallerij van foto's</p>
+            </div>
 
-    <div class="amount-widget">
-        <span>Het aantal personen</span>
-        <div class="amount">
-            <div class="button-row">
-                <button>2</button>
-                <button>3</button>
-                <button>4</button>
-                <button>5</button>
-                <button>6</button>
+            <div class="widget" onclick='goTo("mailto: info@alhambra-restaurant.nl")'>
+                <img class="img" src="images/mail-icon.png" alt="mail-icon"> <br> <br>
+                <span>Info@alhambra-restaurant.nl</span>
+                <p>Voor vragen en informatie van ons restaurant</p>
+            </div>
+
+            <div class="widget" onclick='goTo("https://www.facebook.com/profile.php?id=100083371561019")'>
+                <img class="img" src="images/facebook.png" alt="facebook-icon"> <br> <br>
+                <span>Restaurant Alhambra</span>
+                <p>Om updates te bekijken en een gallerij van foto's</p>
             </div>
         </div>
     </div>
