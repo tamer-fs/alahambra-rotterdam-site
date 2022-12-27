@@ -365,7 +365,7 @@ strong {
 #about-us > button {
     font-family: calibreThin;
     font-size: 1.1rem;
-    background-color: white;
+    background-color: #ffffff;
     border: 1px solid;
     padding: 10px 10px 5px 10px;
     transition: .3s ease;
@@ -835,7 +835,19 @@ div[class^="img-"]:hover {
     }
 }
 
-@media(max-width: 410px) {
+@media (max-width: 380px) {
+    .cropped-1 {
+        width: 35vw;
+    }
+    .cropped-3 {
+        width: 35vw;
+    }
+    .cropped-2 {
+        width: 94vw;
+    }
+}
+
+@media(max-width: 340px) {
     .menu-imgs-container .cropped-0 {
         transform: scale(0.7);
     }
