@@ -366,7 +366,8 @@ strong {
     font-family: calibreThin;
     font-size: 1.1rem;
     background-color: #ffffff;
-    border: 1px solid;
+    border: 1px solid #202020;
+    color: rgb(12, 12, 12);
     padding: 10px 10px 5px 10px;
     transition: .3s ease;
     margin-top: 40px;
@@ -847,7 +848,20 @@ div[class^="img-"]:hover {
     }
 }
 
-@media(max-width: 340px) {
+@media(max-width: 3472px) {
+
+    .cropped-3 {
+        width: 150px;
+    }
+
+    .cropped-1 {
+        width: 150px;
+    }
+
+    .cropped-2 {
+        width: 370px;
+    }
+
     .menu-imgs-container .cropped-0 {
         transform: scale(0.7);
     }
