@@ -357,9 +357,45 @@ strong {
     color: #202020;
 }
 
-#about-us > p {
+#about-us p {
     font-family: calibreThin;
     font-size: 1.1rem;
+}
+
+#about-us > button {
+    font-family: calibreThin;
+    font-size: 1.1rem;
+    background-color: white;
+    border: 1px solid;
+    padding: 10px 10px 5px 10px;
+    transition: .3s ease;
+    margin-top: 40px;
+}
+
+#about-us > button:hover {
+    background-color: #202020;
+    color: white;
+    border-radius: 5px;
+    transition: .3s ease;
+    cursor: pointer;
+}
+
+#about-us {
+    justify-items: center;
+}
+
+#about-us .images-container {
+    justify-items: center;
+    position: absolute;
+    bottom: -850px;
+    right: 100px;
+    width: 40vw;
+}
+
+#about-us .images-container img {
+    height: 300px;
+    margin-top: 50px;
+    margin-right: 50px;
 }
 
 
@@ -558,5 +594,96 @@ strong {
     .top-line-other a {
         font-size: 1rem;
         margin-left: 20px;
+    }
+}
+
+@media (min-width: 760px) {
+    #about-us {
+        width: 25vw;
+        margin: 0px;
+        margin-left: 400px;
+    }
+
+    #about-us .p-container{
+        text-align: left;
+    }
+}
+
+@media (min-width: 1477px) {
+    #about-us p{
+        font-size: 1.2rem;
+    }
+    #about-us span {
+        font-size: 2.4rem;
+    }
+}
+
+@media (max-width: 1614px) {
+    #about-us .images-container img {
+        width: 200px;
+        height: 200px;
+    }
+}
+
+@media (max-width: 1480px) {
+
+    #about-us .images-container img {
+        width: 150px;
+        height: 150px;
+    }
+
+    #about-us .images-container{
+        width: 450px;
+        bottom: -800px;
+    }
+}
+
+@media (max-width: 1377px) {
+    #about-us {
+        margin-left: 100px;
+    }
+}
+
+@media (max-width: 911px) {
+    #about-us .images-container {
+        width: 300px;
+        bottom: -1050px;
+    }
+
+    #about-us .images-container img {
+        margin-right: 0px;
+    }
+}
+
+@media (max-width: 759px) {
+    #about-us {
+        margin-left: 0px;
+        margin: auto;
+    }
+
+    #about-us button {
+        margin-bottom: 150px;
+    }
+
+    #about-us .images-container {
+        position:inherit;
+        width: 80vw;
+        margin: 0px;
+        margin: auto;
+    }
+    #about-us .images-container img {
+        margin-left: 5px;
+        margin-right: 5px;
+        width: 150px;
+        height: auto;
+    }
+}
+
+@media (max-width: 408px) {
+    #about-us .images-container img {
+        margin-left: 5px;
+        margin-right: 5px;
+        width: 125px;
+        height: auto;
     }
 }
