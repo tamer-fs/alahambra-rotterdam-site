@@ -264,7 +264,7 @@ strong {
     height: 60px;
     cursor: pointer;
     background: transparent;
-    border: 2px solid #ffffff;
+    border: 1px solid #ffffff;
     outline: none;
     transition: 1s ease-in-out;
   }
@@ -274,7 +274,7 @@ strong {
     left: 0;
     top: 0;
     fill: none;
-    stroke: rgb(49, 49, 49);
+    stroke: black;
     stroke-dasharray: 150 480;
     stroke-dashoffset: 150;
     transition: 1s ease-in-out;
@@ -282,7 +282,7 @@ strong {
   
   .btn:hover {
     transition: 1s ease-in-out;
-    background: #44444400;
+    background: rgba(0, 0, 0, 0.336);
   }
   
   .btn:hover svg {
@@ -292,8 +292,8 @@ strong {
   .btn span {
     color: rgb(255, 255, 255);
     font-size: 18px;
-    font-weight: Bold;
-    font-family: calibreBold;
+    font-family: calibreThin;
+    font-size: 1.4rem;
   }
 
 #attribution {
@@ -370,6 +370,7 @@ strong {
     padding: 10px 10px 5px 10px;
     transition: .3s ease;
     margin-top: 40px;
+    margin-bottom: 40px;
 }
 
 #about-us > button:hover {
@@ -398,6 +399,96 @@ strong {
     margin-right: 50px;
 }
 
+.menu-imgs-container {
+    width: 90vw;
+    justify-items: center;
+    margin: auto;
+    position: relative;
+}
+
+.menu-imgs-container .img-widget .img-0 {
+    width: 600px;
+    margin-left: -90px;
+}
+
+.menu-imgs-container .img-widget .img-1 {
+    height: 400px;
+    margin-left: 0px;
+    margin-top: -120px;
+}
+
+.menu-imgs-container .img-widget .img-2 {
+    height: 400px;
+    margin-left: 0px;
+    margin-top: -120px;
+}
+
+.menu-imgs-container .img-widget .img-3 {
+    height: 390px;
+    margin-left: -120px;
+    margin-top: -200px;
+}
+
+.menu-imgs-container .img-widget > a {
+    position: absolute;
+    text-decoration: none;
+    border-bottom: 2px solid white;
+    top: 10px;
+    left: 10px;
+    color: white;
+    font-family: calibreThin;
+    font-size: 1.2rem;
+}
+
+.cropped-0 {
+    display: inline-block;
+    width: 360px;
+    height: 500px;
+    overflow: hidden;
+}
+
+.cropped-1 {
+    position: absolute;
+    display: inline-block;
+    height: 180px;
+    width: 300px;
+    overflow: hidden;
+    margin-left: 50px;
+}
+
+.cropped-2 {
+    position: absolute;
+    display: inline-block;
+    height: 180px;
+    width: 600px;
+    overflow: hidden;
+    margin-left: 50px;
+    top: 220px;
+}
+
+.cropped-3 {
+    position: absolute;
+    display: inline-block;
+    height: 180px;
+    width: 250px;
+    overflow: hidden;
+    margin-left: 50px;
+    top: 0px;
+    left: 710px;
+}
+.menu-imgs-container .img-widget {
+    display: inline-block;
+    width: calc(90vw / 5);
+    position: relative;
+}
+
+.menu-imgs-container {
+    justify-items: center;
+}
+
+div[class^="img-"]:hover {
+    cursor: pointer;
+}
 
 @media (max-width: 1097px) {
     .top-line .txt {
@@ -685,5 +776,89 @@ strong {
         margin-right: 5px;
         width: 125px;
         height: auto;
+    }
+}
+
+@media (max-width: 1092px) {
+    .cropped-2 {
+        position: absolute;
+        left: -50px;
+        top: 420px;
+        margin-bottom: 200px;
+    }
+
+    .cropped-1 {
+        width: 220px;
+        left: 330px;
+    }
+
+    .cropped-3 {
+        left: 330px;
+        width: 220px;
+        top: 220px;
+    }
+}
+
+@media (max-width: 680px) {
+    .cropped-0 {
+        width: 200px;
+    }
+
+    .menu-imgs-container .img-widget .img-0 {
+        margin-left: -150px;
+    }
+
+    .cropped-3 {
+        width: 150px;
+        left: 170px;
+    }
+
+    .menu-imgs-container .img-widget .img-3 {
+        margin-left: -150px;
+    }
+
+    .cropped-1 {
+        width: 150px;
+        left: 170px;
+    }
+
+    .menu-imgs-container .img-widget .img-1 {
+        margin-left: -50px;
+    }
+
+    .cropped-2 {
+        width: 370px;
+    }
+
+    .menu-imgs-container .img-widget .img-0 {
+        margin-left: -150px;
+    }
+}
+
+@media(max-width: 410px) {
+    .menu-imgs-container .cropped-0 {
+        transform: scale(0.7);
+    }
+    .menu-imgs-container .cropped-1 {
+        transform: scale(0.7);
+    }
+    .menu-imgs-container .cropped-2 {
+        transform: scale(0.7);
+    }
+    .menu-imgs-container .cropped-3 {
+        transform: scale(0.7);
+    }
+
+    .cropped-1 {
+        left: 110px;
+        top: 48px;
+    }
+    .cropped-2 {
+        left: -75px;
+        top: 340px;;
+    }
+    .cropped-3 {
+        left: 110px;
+        top: 202px;
     }
 }
