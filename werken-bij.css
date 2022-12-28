@@ -3,69 +3,229 @@ body {
     margin: 0px;
 }
 
+@font-face {
+    font-family: calibreRegular;
+    src: url("font/CalibreRegular.otf");
+}
+
+@font-face {
+    font-family: calibreThin;
+    src: url("font/CalibreThin.otf");
+}
+
+@font-face {
+    font-family: calibreBold;
+    src: url("font/CalbireBold.otf");
+}
+
+strong {
+    font-family: calibreRegular;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
 .main-img-crop {
+    position: relative;
     width: 100vw;
-    height: 250px;
+    height: 400px;
     overflow: hidden;
 }
 
 .main-img-crop > img{
-    margin: -400px 0px 0px -250px;
+    height: 1670px;
+    width: auto;
+    margin: -550px 0px 0px -250px;
 }
 
-@media (max-width: 1274px) {
+.main-img-crop .overlay > h1 {
+    margin-top: 50px;
+    font-family: calibreThin;
+    color: white;
+    font-size: 4rem;
+}
+
+.main-img-crop > a {
+    position: absolute;
+    top: 0px;
+    left: 10px;
+    color: white;
+    font-family: calibreThin;
+    text-decoration: none;
+    top: 10px;
+    font-size: 1.4rem;
+    border-bottom: 1px solid white;
+}
+
+.main-img-crop .overlay{
+    position: absolute;
+    top: 0px;
+    width: 301px;
+    margin: auto;
+    left: 0;
+    right: 0;
+    background-color: #0e0e0ead;
+    text-align: center;
+    justify-items: center;
+}
+
+.info-container {
+    background-color: white;
+    box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
+    width: 85vw;
+    margin: auto;
+    padding: 20px;
+    border-radius: 5px;
+    border: 1px solid rgb(109, 109, 109);
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+.info-container input[type="text"] {
+    height: 25px;
+    border-radius: 3px;
+    border: 1px solid rgb(143, 143, 143);
+    box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
+    font-family: calibreThin;
+    font-size: 1.1rem;
+    padding: 5px 10px 0px 10px;
+    margin-top: 20px;
+}
+
+.info-container p {
+    font-family: calibreThin;
+    font-weight: 800;
+    font-size: 1.2rem;
+}
+
+.info-container span {
+    font-family: calibreRegular;
+    font-size: 1.2rem;
+}
+
+#ervaring-horeca {
+    width: 210px;
+    height: 100px;
+}
+
+#vakantie {
+    width: 210px;
+    height: 100px;
+}
+
+#find-btn {
+    font-family: calibreThin;
+    padding: 10px 10px 3px 10px;
+    background-color: white;
+    border: 1px solid rgb(87, 87, 87);
+    font-size: 1.2rem;
+    color: rgb(60, 64, 67);
+    transition: .3s ease;
+}
+
+#find-btn:hover {
+    background-color: rgb(32, 32, 32);
+    border-radius: 5px;
+    color: white;
+    cursor: pointer;
+    transition: .3s ease;
+}
+
+#send-btn {
+    width: 100px;
+    margin: auto;
+    margin-left: 10px;
+    margin-bottom: 10px;
+    margin-top: 30px;
+    font-family: calibreThin;
+    padding: 10px 10px 3px 10px;
+    background-color: white;
+    border: 1px solid rgb(87, 87, 87);
+    font-size: 1.2rem;
+    color: rgb(60, 64, 67);
+    transition: .3s ease;
+}
+
+#send-btn:hover {
+    background-color: rgb(32, 32, 32);
+    border-radius: 5px;
+    color: white;
+    cursor: pointer;
+    transition: .3s ease;
+}
+
+@media (max-width: 1374px) {
+    .main-img-crop {
+        height: 300px;
+    }
     .main-img-crop > img {
         transform: scale(0.7);
-        margin: -400px 0px 0px -340px;
+        margin: -640px 0px 0px -480px;
     }
 }
 
 @media (max-width: 1016px) {
     .main-img-crop > img {
         transform: scale(0.6);
-        margin: -400px 0px 0px -450px;
+        margin: -650px 0px 0px -700px;
     }
 }
 
 @media (max-width: 762px) {
     .main-img-crop > img {
-        transform: scale(0.38);
-        margin: -400px 0px 0px -525px;
+        transform: scale(0.6);
+        margin: -650px 0px 0px -750px;
     }
 }
 
 @media (max-width: 586px) {
+    .main-img-crop {
+        height: 250px;
+    }
     .main-img-crop > img {
-        transform: scale(0.3);
-        margin: -400px 0px 0px -550px;
+        width: 2000px;
+        height: auto;
+        margin: -650px 0px 0px -720px;
+    }
+
+    .main-img-crop .overlay > h1 {
+        font-size: 3rem;
     }
 }
 
 @media (max-width: 492px) {
 
     .main-img-crop {
-        height: 200px;
+        height: 220px;
     }
 
     .main-img-crop > img {
-        transform: scale(0.26);
-        margin: -400px 0px 0px -575px;
+        transform: scale(0.6);
+        margin: -660px 0px 0px -700px;
+    }
+
+    .main-img-crop .overlay > h1 {
+        margin-top: 80px;
+        font-size: 2.5rem;
     }
 }
 
 @media (max-width: 402px) {
     .main-img-crop > img {
-        transform: scale(0.26);
-        margin: -400px 0px 0px -600px;
+        width: 1300px;
+        height: auto;
+        margin: -300px 0px 0px -470px;
     }
 }
 
 @media (max-width: 348px) {
     .main-img-crop > img {
-        transform: scale(0.26);
-        margin: -450px 0px 0px -600px;
+        width: 1200px;
+        height: auto;
+        margin: -320px 0px 0px -410px;
     }
     .main-img-crop {
-        height: 120px;
+        height: 190px;
     }
 }
