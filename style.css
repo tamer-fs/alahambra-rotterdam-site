@@ -293,6 +293,7 @@ strong {
     color: rgb(255, 255, 255);
     font-size: 18px;
     font-family: calibreThin;
+    font-weight: 600;
     font-size: 1.4rem;
   }
 
@@ -489,6 +490,38 @@ strong {
 
 div[class^="img-"]:hover {
     cursor: pointer;
+}
+
+#menu {
+    font-family: calibreThin;
+    font-size: 3rem;
+    font-weight: 100;
+    width: 100px;
+    border-bottom: 1px solid #202020;
+    margin: auto;
+    margin-bottom: 60px;
+}
+
+.menu-txt {
+    position: absolute;
+    width: 300px;
+    text-align: center;
+    right: 150px;
+}
+
+.menu-txt > span {
+    font-family: calibreRegular;
+    font-weight: bold;
+    font-size: 2rem;
+    color: #202020;
+    border-bottom: 2px solid #202020;
+}
+
+.menu-txt > p {
+    font-family: calibreThin;
+    font-weight: 700;
+    font-size: 1.2rem;
+    color: #202020;
 }
 
 @media (max-width: 1097px) {
@@ -886,5 +919,34 @@ div[class^="img-"]:hover {
     .cropped-3 {
         left: 110px;
         top: 202px;
+    }
+}
+
+@media (max-width: 1597px) {
+    .menu-txt {
+        right: 20px;
+    }
+}
+
+@media (max-width: 1427px) {
+    .menu-txt > span {
+        font-size: 2rem;
+    }
+    .menu-txt > p {
+        font-size: 1.2rem;
+    }
+    .menu-txt {
+        top: 2700px;
+        width: 80vw;
+        margin-left: auto;
+        margin-right: auto;
+        left: 0;
+        right: 0;
+    }
+}
+
+@media(max-width: 1092px) {
+    .menu-txt {
+        display: none;
     }
 }
