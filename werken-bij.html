@@ -16,6 +16,15 @@
             <a href="index.html"> < terug </a>
         </div>
 
+        <div class="work-at-txt">
+            <span>Open sollicitatie</span>
+            <p>
+                Intresse in een baan bij Simonis en ben je minimaal 16 jaar oud? 
+                Vul dan het sollicitatieformulier volledig in. Wij nemen dan contact met je op.
+                Uitsluitend volledig ingevulde sollicitatieformulieren <strong>MET</strong> pasfoto worden in behandeling genomen
+            </p>
+        </div>
+
         <div class="info-container">
             <div class="person-widget" style="margin-bottom: 50px; margin-left: 30px;">
                 <span>Persoonsgegevens:</span> <br>
@@ -23,7 +32,7 @@
                 <input type="text" placeholder="Achternaam*">
                 <input type="text" placeholder="Leeftijd*"> <br> <br>
                 <div style="justify-items: center;">
-                    <span style="display: inline-block;">Geslacht:</span> <br>
+                    <span style="display: inline-block;">Geslacht:*</span> <br>
                     <p style="display: inline-block; margin-right: 5px;">man</p> 
                     <input style="display: inline-block;" type="checkbox">
                     <p style="display: inline-block; margin-right: 5px;">vrouw</p> 
@@ -33,12 +42,12 @@
 
             <div class="contact-widget" style="margin-bottom: 50px; margin-left: 30px;">
                 <span>Contactgegevens</span> <br>
-                <input type="text" placeholder="Straat">
-                <input type="text" placeholder="Huisnummer">
-                <input type="text" placeholder="Postcode">
-                <input type="text" placeholder="Plaats">
-                <input type="text" placeholder="Telefoonnummer">
-                <input type="text" placeholder="E-mailadres">
+                <input type="text" placeholder="Straat*">
+                <input type="text" placeholder="Huisnummer*">
+                <input type="text" placeholder="Postcode*">
+                <input type="text" placeholder="Plaats*">
+                <input type="text" placeholder="Telefoonnummer*">
+                <input type="text" placeholder="E-mailadres*">
             </div>
 
             <div class="experience-widget" style="margin-bottom: 50px; margin-left: 30px;">
@@ -51,8 +60,6 @@
                 <span>Overige gegevens</span> <br> <br>
                 <span>Functie*</span>
                 <div style="justify-items: center;">
-                    <p style="display: inline-block;">Verkoop</p>
-                    <input type="checkbox" style="display: inline-block;">
                     <p style="display: inline-block;">Bediening</p>
                     <input type="checkbox" style="display: inline-block;">
                     <p style="display: inline-block;">Keuken</p>
@@ -74,10 +81,14 @@
                     <p style="display: inline-block;">Nee</p>
                     <input type="checkbox" style="display: inline-block;">
                 </div>
-                <input type="text" placeholder="Vakantie" id="vakantie"> <br>
+                <input type="text" placeholder="Vakantie" id="vakantie"> <br> <br>
                 <div>
-                    <input type="text" placeholder="Pasfoto*">
-                    <button id="find-btn">Bladeren</button>
+                    <span>Pasfoto</span> <br> <br>
+                    <input type="text" id="file-in-txt">
+                    <label class="custom-file-upload">
+                        <input type="file" id="file" placeholder="Pasfoto*" />
+                        Bladeren
+                    </label>
                 </div>
             </div>
             <div style="text-align: center;">
