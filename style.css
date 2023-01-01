@@ -524,6 +524,13 @@ div[class^="img-"]:hover {
     color: #202020;
 }
 
+.halal-img {
+    width: 80px;
+    height: auto;
+    position: absolute;
+    top: 940px;
+}
+
 @media (max-width: 1097px) {
     .top-line .txt {
         left: 300px;

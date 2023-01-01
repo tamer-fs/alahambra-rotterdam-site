@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Het super uitgebreide menu van Alhambra</title>
+    <link rel="stylesheet" href="menu.css">
+    <script src="searchItems.js"></script>
+</head>
+<body>
+
+    <a href="index.html#menu"> < terug</a>
+
+    <div style="text-align: center;">
+        <h1 class="title-txt">Dranken</h1>
+    </div>
+
+    <div style="text-align: center;">
+        <div style="text-align: center;" class="input-container">
+            <input type="text" id="search-box" onkeyup="search()" placeholder="Zoekt u naar een drank?">
+        </div>
+    </div>
+
+    <div id="product-list">
+
+    </div>
+
+    <script src="menuItems.js"></script>
+    <div onload="loadItems()"></div>
+</body>
+</html>
