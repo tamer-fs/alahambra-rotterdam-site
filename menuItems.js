@@ -41,13 +41,16 @@ function loadItems() {
         var categoryTitle = document.createElement('h1');
         var price = document.createElement('p'); 
         var titleContainer = document.createElement('div');
+        var txtContainer = document.createElement('div');
+        txtContainer.className = "txt-container"; 
         titleContainer.className = "title-container";
 
         // make and link the text
 
         main.appendChild(ele);
         ele.appendChild(pic);
-        ele.appendChild(name);
+        ele.appendChild(txtContainer);
+        txtContainer.appendChild(name);
         ele.appendChild(price);
 
         pic.src = items[i][4];
