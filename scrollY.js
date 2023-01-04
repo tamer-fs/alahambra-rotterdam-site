@@ -6,6 +6,7 @@ document.addEventListener('scroll', () => {
         document.getElementById("main").style.zIndex = "1";
         document.getElementById("main").style.paddingBottom = "10px";
         document.getElementById("main").style.transition = "1s ease";
+        document.getElementById("main").style.boxShadow = "0px 10px 10px rgba(0, 0, 0, 0.3)";
         document.documentElement.dataset.Drop = 100;
     } else {
         document.getElementById("main").style.position = "";
