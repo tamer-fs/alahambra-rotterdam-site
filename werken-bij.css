@@ -171,6 +171,14 @@ html {
     font-weight: 700;
 }
 
+.preview-img {
+    width: 40vw;
+    height: auto;
+    border-radius: 5px;
+    box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
+    border: 2px solid rgb(143, 143, 143);
+}
+
 @media (max-width: 1374px) {
     .main-img-crop {
         height: 300px;

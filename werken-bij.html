@@ -43,7 +43,7 @@
 
             <div class="contact-widget" style="margin-bottom: 50px; margin-left: 30px;">
                 <span>Contactgegevens</span> <br>
-                <input type="text" placeholder="Straat*">
+                <input type="text" placeholder="Straat*" id="street">
                 <input type="text" placeholder="Huisnummer*">
                 <input type="text" placeholder="Postcode*">
                 <input type="text" placeholder="Plaats*">
@@ -53,7 +53,7 @@
 
             <div class="experience-widget" style="margin-bottom: 50px; margin-left: 30px;">
                 <span>Opleiding / ervaring</span> <br>
-                <input type="text" placeholder="Opleiding/school"> <br>
+                <input type="text" placeholder="Opleiding/school" id="opleiding"> <br>
                 <input type="text" placeholder="Ervaring horeca" id="ervaring-horeca">
             </div>
 
@@ -83,13 +83,13 @@
                     <input type="checkbox" style="display: inline-block;">
                 </div>
                 <input type="text" placeholder="Vakantie" id="vakantie"> <br> <br>
-                <div>
+                <div id="main">
                     <span>Pasfoto</span> <br> <br>
                     <input type="text" id="file-in-txt">
                     <label class="custom-file-upload">
                         <input type="file" id="file" placeholder="Pasfoto*" oninput="previewFile()" />
                         Bladeren
-                    </label>
+                    </label> <br> <br> <br>
                 </div>
             </div>
             <div style="text-align: center;">

@@ -1,10 +1,14 @@
 function previewFile() {
-    var file = document.getElementById('file').value; 
+    var file = document.getElementById('file')
     var txtHolder = document.getElementById('file-in-txt');
     var img = document.createElement('img');
-    document.body.appendChild(img);
-
-    txtHolder.placeholder = file;
-    img.src = file;
-    console.log(file);
+    var main = document.getElementById('main');
+    img.className = "preview-img";
+    main.appendChild(img);
+    var fReader = new FileReader();
+    fReader.readAsDataURL(file.files[0]);
+    fReader.onloadend = function(event){
+        img.src = event.target.result;
+        txtHolder.placeholder = event.target.result;
+    }
 }
