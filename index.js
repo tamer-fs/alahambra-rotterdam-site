@@ -32,3 +32,4 @@ instagramBtn.addEventListener('click', function () {
 function goTo(adress) {
   window.location.href = adress;
 }
+

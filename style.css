@@ -157,7 +157,7 @@ strong {
 .dropdown-content .a:hover {background-color: #ddd;}
   
   /* Show the dropdown menu (use JS to add this class to the .dropdown-content container when the user clicks on the dropdown button) */
-.show {display:block; top: -75vh; transition: .5s ease;}
+.show {position: fixed; display:block; top: -100px; transition: .5s ease;}
 
 .huge-txt {
     position: absolute;
