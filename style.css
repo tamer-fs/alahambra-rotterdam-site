@@ -297,7 +297,7 @@ strong {
   }
 
 #attribution {
-    background-color: #e2d5c5;
+    background-color: #1d1d1a;
     padding: 20px;
     text-align: center;
     margin-top: 300px;
@@ -327,7 +327,7 @@ strong {
 }
 
 .text-widget > a {
-    color: #202020;
+    color: #c2a46d;
     text-decoration: none;
     border-bottom: 1px dotted;
 }
@@ -335,12 +335,12 @@ strong {
 .text-widget > span {
     font-family: calibreRegular;
     font-size: 1.2rem;
-    color: #202020;
+    color: #c2a46d;
     font-weight: 400;
 }
 
 .text-widget > p {
-    color: #202020;
+    color: #c2a46d;
     margin: 12px;
 }
 
