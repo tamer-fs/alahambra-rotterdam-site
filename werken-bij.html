@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="werken-bij.css">
     <title>De leukste baan bij | Alhambra</title>
+    <script src="werken-bij.js"></script>
 </head>
     <body>
         <div class="main-img-crop">
@@ -86,7 +87,7 @@
                     <span>Pasfoto</span> <br> <br>
                     <input type="text" id="file-in-txt">
                     <label class="custom-file-upload">
-                        <input type="file" id="file" placeholder="Pasfoto*" />
+                        <input type="file" id="file" placeholder="Pasfoto*" oninput="previewFile()" />
                         Bladeren
                     </label>
                 </div>
