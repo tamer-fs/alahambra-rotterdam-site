@@ -872,49 +872,103 @@ div[class^="img-"]:hover {
 
 @media (max-width: 680px) {
     .cropped-0 {
-        width: 200px;
+        width: 90vw;
+        margin: auto;
+        margin-bottom: 0px;
+        height: 180px;
     }
 
-    .menu-imgs-container .img-widget .img-0 {
-        margin-left: -150px;
-    }
-
-    .cropped-3 {
-        width: 150px;
-        left: 170px;
-    }
-
-    .menu-imgs-container .img-widget .img-3 {
-        margin-left: -150px;
+    .cropped-0 .img-widget .img-0 {
+        margin-top: -90px;
     }
 
     .cropped-1 {
-        width: 150px;
-        left: 170px;
-    }
-
-    .menu-imgs-container .img-widget .img-1 {
-        margin-left: -50px;
+        margin-top: 0px;
+        width: 90vw;
+        margin: 0px;
+        margin: auto;
+        position: initial;
+        margin-top: 30px;
     }
 
     .cropped-2 {
-        width: 370px;
+        width: 90vw;
+        margin: auto;
+        position: initial;
+        margin-top: 30px;
     }
 
-    .menu-imgs-container .img-widget .img-0 {
-        margin-left: -150px;
+    .cropped-3 {
+        width: 90vw;
+        margin: auto;
+        position: initial;
+        margin-top: 30px;
+    }
+
+    .cropped-0 .img-widget .img-0 {
+        transform: scale(1.5);
+        margin-left: -10px;
+    }
+
+    .cropped-1 .img-widget .img-1 {
+        transform: scale(2.4);
+        margin-left: 100px;
+    }
+
+    .cropped-2 .img-widget .img-2 {
+        transform: scale(1.1);
+        margin-left: 0px;
+    }
+
+    .cropped-3 .img-widget .img-3 {
+        transform: scale(2.2);
+        margin-left: 100px;
     }
 }
 
 @media (max-width: 380px) {
+    .cropped-0 {
+        width: 90vw;
+        margin: auto;
+        margin-bottom: 0px;
+        height: 180px;
+    }
+
+    .cropped-0 .img-widget .img-0 {
+        margin-top: -90px;
+    }
+
     .cropped-1 {
-        width: 35vw;
+        margin-top: 0px;
+        width: 90vw;
+        margin: 0px;
+        margin: auto;
+        position: initial;
+        margin-top: 30px;
     }
-    .cropped-3 {
-        width: 35vw;
-    }
+
     .cropped-2 {
-        width: 94vw;
+        width: 90vw;
+        margin: auto;
+        position: initial;
+        margin-top: 30px;
+    }
+
+    .cropped-3 {
+        width: 90vw;
+        margin: auto;
+        position: initial;
+        margin-top: 30px;
+    }
+
+    .cropped-1 .img-widget .img-1 {
+        transform: scale(2);
+        margin-left: 100px;
+    }
+
+    .cropped-0 .img-widget .img-0 {
+        transform: scale(1.4);
+        margin-left: -100px;
     }
 
 }
